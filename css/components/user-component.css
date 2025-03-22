@@ -1,0 +1,33 @@
+.user-component {
+  display: flex;
+}
+.user-component__column:first-child {
+  display: flex;
+  padding-top: 110px;
+  align-items: center;
+}
+
+.user-component__avatar {
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  border-radius: 30px;
+  object-fit: cover; /* 사진 사이즈 변경 가로,세로 비율 그대로 유지하는 코드 */
+}
+
+.user-component__title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  margin-left: 2px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}

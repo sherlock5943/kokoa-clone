@@ -1,0 +1,19 @@
+#friends-display-link {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 100px;
+  background-color: #f9f9fa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin: 5px 0px;
+}
+/* icon 은 text, font 다 */
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}

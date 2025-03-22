@@ -1,0 +1,72 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2f363e;
+  display: inline block;
+}
+
+.nav__link i {
+  transition: transform 0.3s ease; /* 아이콘에 부드러운 이동 효과 */
+  position: relative; /* z-index를 위해 추가 */
+  z-index: -2; /* 아이콘을 앞으로 */
+}
+
+/* 마우스 올리면 위로 이동 */
+.nav__link:hover i {
+  transform: translateY(-3px); /* 위로 5px 올라감 */
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  /* 높이에 반을 해주면 원형모양이 된다. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  /* 글씨 굵어지게 */
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav__notification2 {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+}
